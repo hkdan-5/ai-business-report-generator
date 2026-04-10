@@ -116,31 +116,53 @@ Interactive Streamlit Dashboard
 ## Repo structure 
 
 ai-business-report-generator/
+
 │
+
 ├── app/
+
 │   └── streamlit_app.py
+
 │
+
 ├── data/
+
 │   └── superstore_sales.csv
+
 │
+
 ├── outputs/
+
 │   └── .gitkeep
+
 │
+
 ├── src/
+
 │   ├── analysis.py
+
 │   ├── data_cleaning.py
+
 │   ├── data_loader.py
+
 │   ├── insight_engine.py
+
 │   └── llm_report.py
+
 │
+
 ├── .gitignore
+
 ├── main.py
+
 ├── README.md
+
 └── requirements.txt
 
 
 ## How the pipeline works
-Data loading
+
+### Data loading
 
 The project begins by loading a sales dataset from CSV format.
 
@@ -188,6 +210,6 @@ the west region generated the highest revenue
 These structured insights are passed to a local language model through Ollama.
 The model then creates a short executive report designed for business stakeholders.
 
-Dashboard delivery
+### Dashboard
 
 All outputs are displayed in a Streamlit dashboard that supports filtering, CSV upload, data preview, and report download.
